@@ -28,8 +28,8 @@ var options = {
 }
 
 //MongoDB connection
-mongoose.connect('mongodb://localhost/newCalendarDB', function(err) {
-//mongoose.connect('mongodb://<dbuser>:<dbpassword>@ds043002.mongolab.com:43002/snowvation', options, function(err) {
+//mongoose.connect('mongodb://localhost/newCalendarDB', function(err) {
+mongoose.connect('mongodb://<dbuser>:<dbpassword>@ds043002.mongolab.com:43002/snowvation', options, function(err) {
     if(err) {
         console.log('MongoDB connection error', err);
     } else {
